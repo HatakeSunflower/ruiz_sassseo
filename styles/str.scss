@@ -1,0 +1,317 @@
+$coolwhite: #F4FDFF;
+$dark: #251E21;
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+	h1 {
+		display: flex;
+		z-index: 10;
+		position: fixed;
+		font-family: poppins;
+		padding: 13px;
+		column-gap: 10px;
+		color: $coolwhite; 
+	}
+}
+h1 {
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 25px;
+		color: $coolwhite; 
+		transition: all .5s;
+		margin-bottom: -10px;
+	}
+}
+nav {
+	z-index: 1;
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	background: $dark;
+	opacity: 0.5;
+	transition: 500ms;
+	ul {
+		float: right;
+		margin-right: 15px;
+		li {
+			display: inline-block;
+			line-height: 60px;
+			margin: 0 5px;
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				font-size: 15px;
+				color: $coolwhite; 
+				transition: all .5s;
+			}
+		}
+	}
+	&:hover {
+		transition: 500ms;
+		opacity: 1;
+	}
+}
+#check {
+	font-size: 20px;
+	color: $coolwhite; 
+	float: right;
+	line-height: 20px;
+	margin-right: 30px;
+	margin-top: 25px;
+	cursor: pointer;
+	display: none;
+}
+.banner-area {
+	width: 100%;
+	height: 700px;
+	position: relative;
+	z-index: -2;
+	top: 0px;
+	background-image: url(../assets/traveller.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.seccion-vanguardia {
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	transition: 0.5s;
+	background-image: url(../assets/supers_bg_desktop.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	.vang {
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.5s;
+		}
+	}
+	.tl {
+		transform: scale(0.3);
+		margin-bottom: -60%;
+		margin-top: -20%;
+	}
+	p {
+		padding: 2%;
+		color: $coolwhite; 
+		font-family: 'Inter', sans-serif;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}
+.titanes {
+	p {
+		border-top: 5px solid #990000e6;
+	}
+}
+.cazadores {
+	p {
+		border-top: 5px solid #1e4263e6;
+	}
+}
+.hechiceros {
+	p {
+		border-top: 5px solid #846c18e6;
+	}
+}
+.seccion-destinos {
+	background-color: #2c3e50;
+	padding: 10%;
+}
+.seccion-grimorio {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-image: url(../assets/hiveb.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	.grim {
+		transition: 0.5s;
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.5s;
+		}
+	}
+	span {
+		font-size: 30px;
+		text-align: center;
+		color: $coolwhite; 
+		text-shadow: 1px $dark;
+		background-color: rgba(0, 0, 0, 0.5);
+		transition: 500ms;
+		margin-top: -50%;
+	}
+}
+.ev0 {
+	margin-bottom: 30px;
+	height: 60px;
+	background-image: url(../assets/traveller.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.seccion-eventos {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	background-image: url(../assets/Haunted_Forest.webp);
+	background-position: center center;
+	background-size: cover;
+	h3 {
+		font-size: x-large;
+		text-align: center;
+		color: $coolwhite; 
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	p {
+		text-align: center;
+		font-size: large;
+		margin-left: 10%;
+		margin-right: 10%;
+		color: $coolwhite; 
+		text-shadow: 1px $dark;
+		background-color: rgba(0, 0, 0, 0.5);
+		transition: 500ms;
+		opacity: 0;
+		&:hover {
+			transition: 500ms;
+			opacity: 1;
+		}
+	}
+}
+.ev1 {
+	height: 300px;
+	margin-bottom: 15px;
+	border: 1px solid white;
+	background-image: url(../assets/fest2.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.ev2 {
+	height: 300px;
+	margin-bottom: 15px;
+	border: 1px solid white;
+	background-image: url(../assets/dawn.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.ev3 {
+	height: 300px;
+	border: 1px solid white;
+	background-image: url(../assets/fest.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.ev4 {
+	height: 300px;
+	border: 1px solid white;
+	background-image: url(../assets/dawn.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.voluntariado {
+	background-image: url(../assets/torre.jpg);
+	padding: 10px;
+	color: $dark;
+	display: flex;
+	flex-direction: row;
+	div {
+		width: 100%;
+		height: 200px;
+		background-image: url(../assets/m_tower_pano.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+	p {
+		padding: 15px;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 200px;
+		width: 240px;
+		float: right;
+		color: $coolwhite; 
+	}
+}
+footer {
+	display: flex;
+	background: $dark;
+	color: whitesmoke;
+	font-family: 'Inter', sans-serif;
+	align-items: center;
+}
+.footer-izq {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	margin: 10px;
+}
+.footer-der {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	align-items: center;
+	column-gap: 10px;
+}
+@media (max-width: 900px) {
+	nav {
+		ul {
+			li {
+				a {
+					font-size: 10px;
+					transition: all .5s;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	#check {
+		display: block;
+		&:checked~ul {
+			left: 0;
+		}
+	}
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 60px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav {
+		ul {
+			li {
+				display: block;
+				margin: 50px 0;
+				line-height: 30px;
+				a {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	li {
+		a {
+			&:hover {
+				background: none;
+				color: red;
+			}
+		}
+		a.active {
+			background: none;
+			color: red;
+		}
+	}
+}

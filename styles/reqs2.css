@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body h1 {
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 38px;
+    display: flex;
+    z-index: 3;
+    position: fixed;
+    padding: 10px;
+    column-gap: 10px;
+    color: white;
+}
+
+nav {
+    z-index: 2;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+}
+
+nav a {
+    text-decoration: none;
+    float: right;
+    margin-right: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+    color: #fff;
+    transition: all .5s;
+}
+
+nav:hover {
+    transition: 500ms;
+    opacity: 1;
+}
+
+.seccion-voluntario {
+    background-image: url(../assets/torre.jpg);
+    background-position: center center;
+	background-size: cover;
+    height: 100%;
+}
+
+.form {
+    top: 20px;
+    padding: 15% 10% 10% 10%;
+}
+
+.card-body{
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 33px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.is {
+    padding: 5px 0;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+
+.card-body {
+    padding: 57px 65px;
+    padding-bottom: 65px;
+    display: table-cell;
+    border-radius: 15px;
+}
+
+footer {
+	display: flex;
+	background: black;
+	color: whitesmoke;
+	font-family: 'Inter', sans-serif;
+	align-items: center;
+}
+
+.footer-izq {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	margin: 10px;
+}
+
+.footer-der {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	align-items: center;
+	column-gap: 10px;
+}
