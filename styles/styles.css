@@ -11,6 +11,7 @@ body {
   font-family: sans-serif;
 }
 
+/* Navbar */
 .menu {
   top: 0;
   z-index: 10;
@@ -61,16 +62,25 @@ body {
 
 .landscape li {
   display: inline;
-  margin: 5px 10px;
+  margin: 10px 20px;
 }
 
+/* Mobile Navbar */
+.dropdown {
+  position: relative;
+  display: none;
+  
+}
 
 .dropbtn {
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 2px;
   text-align: center;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  padding: 5px;
+  margin: 5px;
 }
 
 button {
@@ -84,16 +94,10 @@ button {
   color: #ffffff;
 }
 
-.dropdown {
-  position: relative;
-  display: none;
-}
-
 .dropdown-content {
-  margin-left: -25px;
+  background-color: rgba(255, 255, 255, 0.6);
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -106,7 +110,9 @@ button {
   display: block;
 }
 
-
+.show {
+  display: block;
+}
 
 /* Page Layout */
 .banner-area {
