@@ -46,9 +46,9 @@ body {
 }
 
 .landscape h1 {
+  margin:0;
   padding-left: 16px;
   float:left;
-  margin-top: 2px;
 }
 
 .landscape h1 a{
@@ -63,7 +63,7 @@ body {
 
 .landscape li {
   display: inline;
-  margin: 14px 20px;
+  margin: 10px 20px;
 }
 
 /* Mobile Navbar */
@@ -317,57 +317,8 @@ button {
   color: #F4FDFF;
 }
 
-/* Form */
-.seccion-voluntario {
-  background-image: url(../assets/torre.jpg);
-  background-position: center center;
-  background-size: cover;
-  height: 86vh;
-}
-
-.form {
-  top: 20px;
-  padding-top: 10%;
-  margin: 0 10% 10% 10%;
-}
-
-input {
-  outline: none;
-  margin: 0;
-  border: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  width: 100%;
-  font-size: 14px;
-  font-family: inherit;
-}
-
-.input-group {
-  position: relative;
-  margin-bottom: 33px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.is {
-  padding: 5px 0;
-  font-size: 16px;
-  color: rgb(0, 0, 0);
-  background: transparent;
-}
-
-.card-body {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 57px 65px;
-  padding-bottom: 45px;
-  display: table-cell;
-  border-radius: 15px;
-}
-
 /* Footer */
 footer {
-  min-height: 50px;
-  height: 7vh;
   display: flex;
   background: #251E21;
   color: whitesmoke;
@@ -395,13 +346,8 @@ footer {
   .dropdown {
     display: inline-block;
   }
+
   .landscape {
     display: none;
-  }
-  .ob {
-    display: block;
-  }
-  .seccion-voluntario {
-    height: 100vh;
   }
 }
