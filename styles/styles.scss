@@ -1,0 +1,300 @@
+$coolwhite: #F4FDFF;
+$dark: #251E21;
+
+@mixin fondo($color){
+	background-color: $color;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+	border-top: 15px solid #000000;
+	font-family: $font-family_1;
+}
+.menu {
+	top: 0;
+	z-index: 10;
+	position: -webkit-sticky;
+	position: sticky;
+	background-color: $background-color_1;
+	text-align: center;
+	a {
+		padding: 5px;
+		border-radius: 2px;
+		color: $color_2;
+		font-size: large;
+		border: #000000;
+		&:hover {
+			background-color: $background-color_2;
+			color: $color_1;
+		}
+	}
+}
+.dropbtn {
+	border-radius: 2px;
+	text-align: center;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	&:hover {
+		background-color: $background-color_2;
+		color: $color_1;
+	}
+	&:focus {
+		background-color: $background-color_2;
+		color: $color_1;
+	}
+}
+button {
+	margin: 0;
+	border-radius: 0;
+}
+.dropdown {
+	position: relative;
+	display: none;
+}
+.dropdown-content {
+	margin-left: -25px;
+	display: none;
+	position: absolute;
+	background-color: $background-color_3;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	a {
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+}
+.show {
+	display: block;
+}
+.logo {
+	padding: 10px;
+	position: relative;
+	display: block;
+	width: 60px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.landscape {
+	ul {
+		margin: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 10px 20px;
+	}
+}
+.liner {
+	border-top: 3px solid #000000;
+	padding-top: 15px;
+}
+.banner-area {
+	width: 100%;
+	height: 700px;
+	position: relative;
+	z-index: -2;
+	top: 0px;
+	background-image: url(../assets/traveller.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.seccion-vanguardia {
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	transition: 0.5s;
+	background-image: url(../assets/supers_bg_desktop.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	.vang {
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.5s;
+		}
+	}
+	.tl {
+		transform: scale(0.3);
+		margin-bottom: -60%;
+		margin-top: -20%;
+	}
+	p {
+		padding: 2%;
+		color: $color_3;
+		font-family: $font-family_2;
+		background-color: $background-color_4;
+	}
+}
+.titanes {
+	p {
+		border-top: 5px solid #990000e6;
+	}
+}
+.cazadores {
+	p {
+		border-top: 5px solid #1e4263e6;
+	}
+}
+.hechiceros {
+	p {
+		border-top: 5px solid #846c18e6;
+	}
+}
+.seccion-destinos {
+	background-color: $background-color_5;
+	padding: 10%;
+}
+.seccion-grimorio {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-image: url(../assets/hiveb.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	.grim {
+		transition: 0.5s;
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.5s;
+		}
+	}
+	span {
+		font-size: 30px;
+		text-align: center;
+		color: $color_3;
+		text-shadow: 1px #251E21;
+		background-color: $background-color_4;
+		transition: 500ms;
+		margin-top: -50%;
+	}
+}
+.ev0 {
+	margin-bottom: 30px;
+	height: 60px;
+	background-image: url(../assets/traveller.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.seccion-eventos {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	background-image: url(../assets/Haunted_Forest.webp);
+	background-position: center center;
+	background-size: cover;
+	h2 {
+		font-size: x-large;
+		text-align: center;
+		color: $color_3;
+		background-color: $background-color_4;
+	}
+	p {
+		text-align: center;
+		font-size: large;
+		margin-left: 10%;
+		margin-right: 10%;
+		color: $color_3;
+		text-shadow: 1px #251E21;
+		background-color: $background-color_4;
+		transition: 500ms;
+		opacity: 0;
+		&:hover {
+			transition: 500ms;
+			opacity: 1;
+		}
+	}
+}
+.ev1 {
+	height: 300px;
+	margin-bottom: 15px;
+	border: 1px solid white;
+	background-image: url(../assets/fest2.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.ev2 {
+	height: 300px;
+	margin-bottom: 15px;
+	border: 1px solid white;
+	background-image: url(../assets/dawn.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.ev3 {
+	height: 300px;
+	border: 1px solid white;
+	background-image: url(../assets/fest.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.ev4 {
+	height: 300px;
+	border: 1px solid white;
+	background-image: url(../assets/dawn.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.voluntariado {
+	background-image: url(../assets/torre.jpg);
+	padding: 10px;
+	color: $color_4;
+	display: flex;
+	flex-direction: row;
+	div {
+		width: 100%;
+		height: 200px;
+		background-image: url(../assets/m_tower_pano.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+	p {
+		padding: 15px;
+		background-color: $background-color_4;
+		height: 200px;
+		width: 240px;
+		float: right;
+		color: $color_3;
+	}
+}
+footer {
+	display: flex;
+	background: #251E21;
+	color: $color_5;
+	font-family: $font-family_2;
+	align-items: center;
+}
+.footer-izq {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	margin: 10px;
+}
+.footer-der {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	align-items: center;
+	column-gap: 10px;
+}
+@media (max-width: 768px) {
+	.dropdown {
+		display: inline-block;
+	}
+	.landscape {
+		display: none;
+	}
+}
