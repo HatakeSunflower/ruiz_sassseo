@@ -1,5 +1,6 @@
 $coolwhite: #F4FDFF;
 $dark: #251E21;
+$font-family_2: 'Inter', sans-serif;
 
 @mixin fondo($color){
 	background-color: $color;
@@ -14,14 +15,14 @@ $dark: #251E21;
 }
 body {
 	border-top: 15px solid #000000;
-	font-family: $font-family_1;
+	font-family: $font-family;
 }
 .menu {
 	top: 0;
 	z-index: 10;
 	position: -webkit-sticky;
 	position: sticky;
-	background-color: $background-color_1;
+	background-color: $coolwhite;
 	text-align: center;
 	a {
 		padding: 5px;
