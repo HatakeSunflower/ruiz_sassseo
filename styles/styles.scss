@@ -1,10 +1,12 @@
-$coolwhite: #F4FDFF;
-$dark: #251E21;
-$font-family_2: 'Inter', sans-serif;
-
-@mixin fondo($color){
-	background-color: $color;
-}
+$color_1: black;
+$color_2: whitesmoke;
+$color_3: #fbff00;
+$font-family_1: 'Inter', sans-serif;
+$font-family_2: inherit;
+$background-color_1: rgba(0, 0, 0, 1);
+$background-color_2: rgba(0, 0, 0, 0.5);
+$background-color_3: rgba(255, 255, 255, 1);
+$background-color_4: rgba(255, 255, 255, 0.5);
 
 * {
 	padding: 0;
@@ -14,56 +16,84 @@ $font-family_2: 'Inter', sans-serif;
 	box-sizing: border-box;
 }
 body {
-	border-top: 15px solid #000000;
-	font-family: $font-family;
+	border-top: 1vh solid #000000;
+	font-family: $font-family_2;
 }
 .menu {
 	top: 0;
 	z-index: 10;
 	position: -webkit-sticky;
 	position: sticky;
-	background-color: $coolwhite;
-	text-align: center;
 	a {
+		text-decoration: none;
 		padding: 5px;
-		border-radius: 2px;
-		color: $color_2;
+		border-radius: 3px;
 		font-size: large;
-		border: #000000;
+		text-transform: capitalize;
+		color: $color_1;
 		&:hover {
-			background-color: $background-color_2;
-			color: $color_1;
+			background-color: $background-color_1;
+			color: $color_2;
 		}
 	}
 }
+.landscape {
+	height: 60px;
+	min-height: 6vh;
+	background-color: $background-color_4;
+	transition: 0.3s;
+	&:hover {
+		background-color: $background-color_3;
+		transition: 0.3s;
+	}
+	h1 {
+		padding-left: 16px;
+		float: left;
+		margin-top: 2px;
+		a {
+			font-size: 25px;
+		}
+	}
+	ul {
+		float: right;
+		margin: 0;
+		padding: 16px;
+	}
+	li {
+		display: inline;
+		margin: 14px 20px;
+	}
+}
+.dropdown {
+	position: relative;
+	display: none;
+}
 .dropbtn {
+	background-color: $background-color_4;
 	border-radius: 2px;
 	text-align: center;
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
+	padding: 5px;
+	margin: 5px;
 	&:hover {
-		background-color: $background-color_2;
-		color: $color_1;
+		background-color: $background-color_1;
+		color: $color_2;
 	}
 	&:focus {
-		background-color: $background-color_2;
-		color: $color_1;
+		background-color: $background-color_1;
+		color: $color_2;
 	}
 }
 button {
 	margin: 0;
 	border-radius: 0;
 }
-.dropdown {
-	position: relative;
-	display: none;
-}
 .dropdown-content {
-	margin-left: -25px;
+	background-color: $background-color_4;
 	display: none;
 	position: absolute;
-	background-color: $background-color_3;
 	min-width: 160px;
 	overflow: auto;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -77,31 +107,9 @@ button {
 .show {
 	display: block;
 }
-.logo {
-	padding: 10px;
-	position: relative;
-	display: block;
-	width: 60px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-.landscape {
-	ul {
-		margin: 0;
-	}
-	li {
-		display: inline-block;
-		margin: 10px 20px;
-	}
-}
-.liner {
-	border-top: 3px solid #000000;
-	padding-top: 15px;
-}
 .banner-area {
 	width: 100%;
-	height: 700px;
+	height: 93vh;
 	position: relative;
 	z-index: -2;
 	top: 0px;
@@ -111,6 +119,8 @@ button {
 	background-position: center center;
 }
 .seccion-vanguardia {
+	height: 100vh;
+	padding-top: 4%;
 	padding-bottom: 5%;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -133,9 +143,9 @@ button {
 	}
 	p {
 		padding: 2%;
-		color: $color_3;
+		color: $color_2;
 		font-family: $font-family_2;
-		background-color: $background-color_4;
+		background-color: $background-color_2;
 	}
 }
 .titanes {
@@ -154,11 +164,21 @@ button {
 	}
 }
 .seccion-destinos {
-	background-color: $background-color_5;
-	padding: 10%;
+	background-image: url(../assets/clift.jpeg);
+	padding: 7vh;
+	p {
+		-webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+	}
+}
+.carousel-mod {
+	height: 86vh;
+}
+h3 {
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
 }
 .seccion-grimorio {
-	padding-top: 5%;
+	height: 100vh;
+	padding-top: 12%;
 	padding-bottom: 5%;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -168,28 +188,24 @@ button {
 	background-position: center center;
 	.grim {
 		transition: 0.5s;
-		transition: 0.5s;
 		&:hover {
 			transform: scale(1.1);
 			transition: 0.5s;
+			span {
+				display: block;
+			}
 		}
 	}
 	span {
 		font-size: 30px;
 		text-align: center;
-		color: $color_3;
+		color: $color_4;
 		text-shadow: 1px #251E21;
-		background-color: $background-color_4;
+		background-color: $background-color_2;
 		transition: 500ms;
-		margin-top: -50%;
+		margin-top: -30%;
+		display: none;
 	}
-}
-.ev0 {
-	margin-bottom: 30px;
-	height: 60px;
-	background-image: url(../assets/traveller.jpg);
-	background-position: center center;
-	background-size: cover;
 }
 .seccion-eventos {
 	padding-top: 60px;
@@ -200,59 +216,56 @@ button {
 	h2 {
 		font-size: x-large;
 		text-align: center;
-		color: $color_3;
-		background-color: $background-color_4;
+		color: $color_2;
+		background-color: $background-color_2;
+		transition: 500ms;
+		opacity: 0;
 	}
 	p {
 		text-align: center;
 		font-size: large;
 		margin-left: 10%;
 		margin-right: 10%;
-		color: $color_3;
+		color: $color_2;
 		text-shadow: 1px #251E21;
-		background-color: $background-color_4;
+		background-color: $background-color_2;
 		transition: 500ms;
 		opacity: 0;
-		&:hover {
+	}
+}
+.eq {
+	&:hover {
+		p {
+			transition: 500ms;
+			opacity: 1;
+		}
+		h2 {
 			transition: 500ms;
 			opacity: 1;
 		}
 	}
+	height: 300px;
+	margin-bottom: 15px;
+	border: 1px solid white;
+	background-position: center center;
+	background-size: cover;
 }
 .ev1 {
-	height: 300px;
-	margin-bottom: 15px;
-	border: 1px solid white;
 	background-image: url(../assets/fest2.jpg);
-	background-position: center center;
-	background-size: cover;
 }
 .ev2 {
-	height: 300px;
-	margin-bottom: 15px;
-	border: 1px solid white;
-	background-image: url(../assets/dawn.jpg);
-	background-position: center center;
-	background-size: cover;
+	background-image: url(../assets/juegos.jpg);
 }
 .ev3 {
-	height: 300px;
-	border: 1px solid white;
-	background-image: url(../assets/fest.jpg);
-	background-position: center center;
-	background-size: cover;
+	background-image: url(../assets/iron.jpg);
 }
 .ev4 {
-	height: 300px;
-	border: 1px solid white;
 	background-image: url(../assets/dawn.jpg);
-	background-position: center center;
-	background-size: cover;
 }
 .voluntariado {
 	background-image: url(../assets/torre.jpg);
 	padding: 10px;
-	color: $color_4;
+	color: $color_1;
 	display: flex;
 	flex-direction: row;
 	div {
@@ -264,17 +277,59 @@ button {
 	}
 	p {
 		padding: 15px;
-		background-color: $background-color_4;
+		background-color: $background-color_2;
 		height: 200px;
 		width: 240px;
 		float: right;
-		color: $color_3;
+		color: $color_2;
 	}
 }
+.seccion-voluntario {
+	background-image: url(../assets/torre.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 86vh;
+}
+.form {
+	top: 20px;
+	padding-top: 10%;
+	margin: 0 10% 10% 10%;
+}
+input {
+	outline: none;
+	margin: 0;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	width: 100%;
+	font-size: 14px;
+	font-family: $font-family_2;
+}
+.input-group {
+	position: relative;
+	margin-bottom: 33px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.is {
+	padding: 5px 0;
+	font-size: 16px;
+	color: $color_1;
+	background: transparent;
+}
+.card-body {
+	background-color: $background-color_4;
+	padding: 57px 65px;
+	padding-bottom: 45px;
+	display: table-cell;
+	border-radius: 15px;
+}
 footer {
+	min-height: 50px;
+	height: 7vh;
 	display: flex;
 	background: #251E21;
-	color: $color_5;
+	color: $color_2;
 	font-family: $font-family_2;
 	align-items: center;
 }
@@ -297,5 +352,11 @@ footer {
 	}
 	.landscape {
 		display: none;
+	}
+	.ob {
+		display: block;
+	}
+	.seccion-voluntario {
+		height: 100vh;
 	}
 }
